@@ -10,7 +10,23 @@
 import os
 import time
 import math
-
+print("  .--.    .----. .----. .-. .-.   .-----.  .---.    .----.  .---.  .----.  .----. ")
+print(" / {} \  { {__-` | }`-' { | { |   `-' '-' / {-. \   | }`-' / {-. \ } {-. \ } |__} ")
+print("/  /\  \ .-._} } | },-. | } | }     } {   \ '-} /   | },-. \ '-} / } '-} / } '__} ")
+print("`-'  `-' `----'  `----' `-' `-'     `-'    `---'    `----'  `---'  `----'  `----' ")
+print("                                                                                  ")
+print(".----.  .---.  .-. .-. .-.   .-..----. .---.  .-----. .----. .---.  ")
+print("| }`-' / {-. \ |  \{ |  \ \_/ / } |__} } }}_} `-' '-' } |__} } }}_} ")
+print("| },-. \ '-} / | }\  {   \   /  } '__} | } \    } {   } '__} | } \  ")
+print("`----'  `---'  `-' `-'    `-'   `----' `-'-'    `-'   `----' `-'-'  ")
+print("                                                                    ")
+print(".----.  .-.  .-.    .----. .-. .-. .----.  .---.  .---.  .---.  ")
+print("| {_} }  \ \/ /    { {__-` | } { | | {_} } } }}_} `-`} } `-`} } ")
+print("| {_} }   `-\ }    .-._} } \ `-' / | {_} } | } \    / /  { {.-. ")
+print("`----'      `-'    `----'   `---'  `----'  `-'-'   `-'    `---' ")
+print("                                                                ")
+print("Created by ASCIItoCODE Converter by SUBR72")
+time.sleep(5)
 def getSize():
     fileinfo = os.stat("pic.json")
     if fileinfo.st_size >= 5:
@@ -37,7 +53,7 @@ def convertate():
             pcents = math.floor(pcents)
             print("Progress: " + str(pcents) + "%")
             if i == len(filetext_new):
-                filetext_end.append('print("Created by ASCIItoCODE Converter by Zayats")')
+                filetext_end.append('print("Created by ASCIItoCODE Converter by SUBR72")')
                 file_new = open("output.json","w")
                 while j != len(filetext_end):
                     file_new.write(filetext_end[j])
@@ -45,8 +61,8 @@ def convertate():
                     if j == len(filetext_end):
                         file.close()
                         file_new.close()
-                        print("Convertation end!")
-                        return True
+                        print("Convertation end")
+breakpoint()
 
 def main():
     convertate()
